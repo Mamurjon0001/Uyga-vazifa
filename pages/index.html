@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        white: 'white',
+                        whiter:'#EBEBEB',
+                        dark: '#000',
+                        gray:'#6B6B6B',
+                        blur:'#D3D3D3',
+                        blue:'#3B79C3',
+                        lightgrey:'#757575'
+
+                    },
+                    
+                    borderRadius: {
+                        xsm: '3px',
+                        sm: '5px'
+                    },
+                    fontFamily: {
+                        roboto: [ 'Roboto', 'sans-serif'],
+                    },
+                    screens: {
+                        'sm': '500px',
+                        'md': '768px',
+                        'lg': '992px',
+                        'xl': '1200px',
+                        '2xl': '1152px',
+                    },
+
+                    width:{
+                        hero:'504px',
+                        heroimg:'320px',
+                        class:'509px',
+                        layout:'314px',
+                        step:'364px',
+                        tips:'243px'
+                    },
+
+                    height: {
+                        heroheight:'500px',
+                        layout:'806px'
+                    },
+
+                    gap:{
+                        gaphero:'194px',
+                        class:'215px',
+                        tip:'69px'
+                    }
+                    
+                }
+            }
+        }        
+    </script>
+</head>
+
+<body>
+
+    <header class="bg-gray">
+        <div class="mx-auto 2xl:container ">
+            <nav class="flex justify-between items-center py-6">
+                <div>
+                    <a href=""><img src="../assets/images/logo.png" alt=""></a>
+                </div>
+                <ul class="flex items-center gap-16 text-white font-roboto">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+   
+    <main>
+
+        <section class="bg-whiter h-heroheight">
+            <div class="mx-auto 2xl:container">
+
+                <div class="flex items-center gap-gaphero">
+                    <div class="w-hero">
+                        <h2 class="text-4xl mb-2.5">
+                            Double click text to change it
+                        </h2>
+                        <p class="text-lg mb-8">
+                            To style this paragraph, select this paragraph, then edit its styles in the
+                            Style tabon the right side of the Designer.
+                        </p>
+
+                        <button class="bg-white py-3.5 px-6 rounded-md  hover:bg-violet-600 hover:text-white">
+                            Edit this link in the settings tab in the right panel
+                        </button>
+                    </div>
+                    
+                    
+                    <div class="w-heroimg text-center">
+                        <img src="../assets/images/hero.png" alt="">
+                        <p class="font-roboto text-lightgrey">
+                            In the navigator tab located in the right panel you can see all your elements in one place.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-blur">
+            <div class="mx-auto 2xl:container">
+                <ul class="flex items-center gap-16 py-12">
+                    <li><img src="../assets/images/facebook.png" alt=""></li>
+                    <li><img src="../assets/images/stripe.png" alt=""></li>
+                    <li><img src="../assets/images/apple.png" alt=""></li>
+                    <li><img src="../assets/images/fitbit.png" alt=""></li>
+                    <li><img src="../assets/images/buzzfid.png" alt=""></li>
+                    <li><img src="../assets/images/sega.png" alt=""></li>
+                    <li><img src="../assets/images/dropbox.png" alt=""></li>
+                    <li><img src="../assets/images/google.png" alt=""></li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="mx-auto 2xl:container pt-12 pb-16">
+                <div class="flex items-center gap-class">
+                    <div class="w-class">
+                        <h3 class="text-3xl mb-3.5">
+                            What is a Class?
+                        </h3>
+                        <p>
+                            A Class is more than just the name of an element, it is a title you create that can be added to other elements that you'd like to be styled the same way. Notice that if you select this paragraph, and change it, it will effect the paragraph below as well, since they have the same Class.
+                        </p>
+                    </div>
+                    <div class="text-center ">
+                        <img src="../assets/images/class.png" alt="">
+                        <p class="text-lightgrey">Double click an image to replace it.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-class">
+                    <div class="text-center ">
+                        <img src="../assets/images/parents.png" alt="">
+                        <p class="text-lightgrey">You can also double click an image to change its size.</p>
+                    </div><div class="w-class">
+                        <h3 class="text-3xl mb-3.5">
+                            Parents, and text alignment
+                        </h3>
+                        <p>
+                            By now you may have noticed that web design, simply put, is a series of boxes inside of boxes with text and images inside of them. Try selecting the parent element of this text
+                        </p>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </section>
+
+        <section class="bg-whiter h-layout">
+            <div class="mx-auto 2xl:container text-center pt-20">
+                <h3 class="text-4xl mb-3">
+                    Layout tip
+                </h3>
+                <p>
+                    Change the layout direction of a flexbox element from horizontal to vertical.
+                </p>
+
+                <div class="w-layout my-0 mx-auto">
+                    <img src="../assets/images/layout.png" alt="">
+                    <p class="text-lightgrey mb-12">Flexbox is a display setting found in the styles tab under  Layout > Display Settings</p>
+                </div>
+
+                <div>
+                    <ul class="flex items-center gap-8">
+                        <li class="w-step py-8 bg-white text-center flex flex-col  items-center rounded-sm">
+                            <p class="mb-8">Step 1</p>
+                            <img src="../assets/images/step1.png" alt="">
+                            <p class="mt-8">
+                                Click to select Column 1 which is <br> the white box that this paragraph you're <br> reading is currently inside of.
+                            </p>
+                        </li>
+                        <li class="w-step py-8 bg-white text-center flex flex-col  items-center rounded-sm">
+                            <p class="mb-8">Step 2</p>
+                            <img src="../assets/images/step2.png" alt="">
+                            <p class="mt-8">
+                                Click to select Column 1 which is <br> the white box that this paragraph you're <br> reading is currently inside of.
+                            </p>
+                        </li>
+                        <li class="w-step py-8 bg-white text-center flex flex-col  items-center rounded-sm">
+                            <p class="mb-8">Step 3</p>
+                            <img src="../assets/images/step3.png" alt="">
+                            <p class="mt-8">
+                                Click to select Column 1 which is <br> the white box that this paragraph you're <br> reading is currently inside of.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="mx-auto 2xl:container pt-24 pb-20">
+                <h3 class="mb-10 pl-8 text-4xl">Additional tips</h3>
+                <ul class="flex items-center gap-tip">
+                    <li class="w-tips text">
+                        <img src="../assets/images/margin.png" width="230" alt="">
+                        <div class="pl-6">
+                            <h4 class="pb-3.5 text-lg">Margin / Padding</h4>
+                            <p class="text-sm">
+                                The above screenshot shows the controls for margin and padding. Simply put, this is the space you add inside and/or outside of an element.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="w-tips text">
+                        <img src="../assets/images/addelements.png" width="230" alt="">
+                        <div class="pl-6">
+                            <h4 class="pb-3.5 text-lg">Add Elements</h4>
+                            <p class="text-sm">
+                                The navigator tab gives you a clear breakdown of elements and their parents, as well as where they are located within the page.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="w-tips text">
+                        <img src="../assets/images/responsive.png" width="230" alt="">
+                        <div class="pl-6">
+                            <h4 class="pb-3.5 text-lg">Responsive design</h4>
+                            <p class="text-sm">
+                                Clicking these breakpoints icons will change the size of the viewport to mimic common device sizes. Styles that are changed when viewing the website at other breakpoints will effect sizes smaller as well.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="w-tips text">
+                        <img src="../assets/images/states.png" width="230" alt="">
+                        <div class="pl-6">
+                            <h4 class="pb-3.5 text-lg">States</h4>
+                            <p class="text-sm">
+                                On the top right of the selector section, there is a states dropdown. Here you can edit element styles at different states. The most common use for this is adding hover effects to elements such as buttons.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    
+    
+    <footer>
+        <div class="bg-gray">
+            <div class="mx-auto 2xl:container ">
+                <nav class="flex justify-between items-center py-8">
+                    <div>
+                        <a href=""><img src="../assets/images/logo.png" alt=""></a>
+                    </div>
+                    <ul class="flex items-center gap-16 text-white font-roboto">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="py-3.5 bg-black">
+                <div class="mx-auto 2xl:container">
+                    <p class="text-lightgrey">© 2017, Webflow, Inc. All Rights Reserved. Brand logos for demonstration purposes only.</p>
+                                </div>
+                </div>
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>
